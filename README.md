@@ -8,4 +8,7 @@ Tables used: results, races, drivers and constructors, merged on their ID column
 Seasons: 2018 onward (about 3,800 driver-race rows).
 Missing values are written as \N in this dataset, so they are read in as NaN with na_values="\\N".
 
-Models:A linear regression, KNN, decision tree, random forest, and neural network were trained to predict the racer's finishing rank. Only KNN and decision tree were trained using GridSearchCV. All 5 models were evaluated using the R^2 score, which tells how well the model predicted the results based on the variation in the data, with 0 being the worst and 1 being the best. If a model somehow manages to score below 0, it would mean that they preformed worst than just predicting the average 
+Models: A linear regression, KNN, decision tree, random forest, and neural network were trained to predict the racer's finishing rank. Only KNN and decision tree were trained using GridSearchCV. All 5 models were evaluated using the R^2 score, which tells how well the model predicted the results based on the variation in the data, with 0 being the worst and 1 being the best. If a model somehow manages to score below 0, it would mean that they preformed worst than just predicting the average 
+
+
+Disclaimer: I did use Claude to help me download and import the data, as well as fix some bugs and spliting the data for the neural network
